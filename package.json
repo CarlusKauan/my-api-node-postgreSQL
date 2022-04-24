@@ -1,0 +1,29 @@
+{
+  "name": "my-api-node-postgresql",
+  "version": "1.0.0",
+  "description": "Nessa série vamos falar sobre tudo que envolve escrever APIs utilizando REST.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "jest --env node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlusKauan/my-api-node-postgreSQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlusKauan/my-api-node-postgreSQL/issues"
+  },
+  "homepage": "https://github.com/CarlusKauan/my-api-node-postgreSQL#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "pg-promise": "^10.11.1"
+  }
+}

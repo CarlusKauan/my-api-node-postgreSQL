@@ -13,19 +13,16 @@ routes.post('/pets', async (req, res) => {
     res.json(newPost);
 })
 
-// routes.get('/pets/:id', (req, res) => {
-//     return res.send('<h2>Hello in /:id</h2>')
-// })
+routes.put('/pets/:id', async (req, res) => {
+    const post = req.body;
+    await petsService.updatePost(req.params.id, post);
+    res.end();
+});
 
-// 
-
-// routes.patch('/pets/:id', (req, res) => {
-//     return res.send('<h2>Hello in patch</h2>')
-// })
-
-// routes.delete('/pets/:id', (req, res) => {
-//     return res.send('<h2>Hello in delete</h2>')
-// })
+routes.delete('/pets/:id', async (req, res) => {
+    await petsService.deletePost(req.params.id);
+    res.end();
+})
 
 // distribuir rotas em arquivos diferentes !
 module.exports = routes

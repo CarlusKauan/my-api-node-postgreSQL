@@ -1,6 +1,6 @@
 create schema pet;
 
-create table pet.post (
+alter table pets (
     id serial primary key,
     nome text not null, 
     dono text not null,
